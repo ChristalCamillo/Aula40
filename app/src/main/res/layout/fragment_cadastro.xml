@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#A9A9A9"
+    android:backgroundTint="@color/silver"
     tools:context=".CadastroFragment">
 
     <TextView
         android:id="@+id/cadastro"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/cadastro"
@@ -23,7 +23,7 @@
 
     <EditText
         android:id="@+id/nome_e_sobrenome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nome e sobrenome"
         android:textSize="@dimen/fonte_16"
@@ -34,7 +34,7 @@
 
     <EditText
         android:id="@+id/horas_trabalhadas"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Horas trabalhadas"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
 
     <EditText
         android:id="@+id/valor_por_hora"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Valor por hora"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +56,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/calcular_salario"
-        android:layout_margin="16dp"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginRight="@dimen/margem_16"
         android:backgroundTint="#FFB74D"
         android:text="calcular salario"
         android:textAllCaps="true"
